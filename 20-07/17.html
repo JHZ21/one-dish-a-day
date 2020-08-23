@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>padding, margin, width, height</title>
+    <style>
+        body>span {
+            width: 50px;
+            height: 50px;
+            padding: 50px 50px;
+            margin: 50p 50px;
+            background-color: aquamarine;
+        }
+        body > div {
+            width: 50px;
+            height: 50px;
+            padding: 50px;
+            margin: 50px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <span style="margin: 20px;">这是个内联元素，用来显示内容</span>
+    <span>这是又个内联元素，用来显示内容</span>
+    <ul style="margin-top: 100px;">内联元素：
+        <li>设置 width, height 属性无无效</li>
+        <li>padding-left, padding-right 有边距效果,padding-top, padding-bottom，无边距效果，但会影响背景</li>
+        <li>margin的left,rigth 会生效， top, bottom: 不会生效</li>
+    </ul>
+    <hr>
+    <div>块级元素</div>
+</body>
+
+</html>

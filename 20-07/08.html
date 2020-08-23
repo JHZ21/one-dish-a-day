@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block and inline</title>
+    <style>
+        /* not 选择器 */
+        .box> :not(.title) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin: 0 auto;width: 200px;">每日一菜</h1>
+
+    <!-- example -->
+    <div class="box">
+        <h2 class="title">块级元素:
+        </h2>
+        霸占一行，不能与其他任何元素并列。
+        能接受宽高，如果不设置宽度，那么宽度将默认变为父级的100%。
+        <div class="ele divEle">div</div>
+        <p class="ele">p</p>
+        <h3>h1-h6</h3>
+        <form class="ele" action="">
+            form
+        </form>
+        <ul>
+            ul: unordered list
+            <li>li</li>
+            <li>li</li>
+        </ul>
+        <ol>
+            ol: ordered list
+            <li>li</li>
+            <li>li</li>
+        </ol>
+        <dl> dl : 定义列表
+            <dt>dt</dt>
+            <dd>td</dt>
+            <dt>dt</dt>
+            <dd>td</dt>
+        </dl>
+        <header>header</header>
+        <nav>nav</nav>
+        <pre>pre</pre>
+        <article>article</article>
+        <aside>aside</aside>
+        <address>address</address>
+        <footer>footer</footer>
+
+        <table>
+            <tr>
+                <th>table</th>
+            </tr>
+            <tr>
+                <td>tr td</td>
+            </tr>
+        </table>
+        hr:
+        <hr>
+    </div>
+    <div class="box">
+        <h2 class="title">内联元素:
+        </h2>
+        与其他行内元素并排
+        不能设置宽高，默认的宽度就是文字的宽度
+        <br>
+        <span class="ele">span</span>
+        <input type="text" value="input">
+        <textarea name="" id="" cols="15" rows="5">
+            textarea 
+        </textarea>
+        <select name="" id="">
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+        </select>
+        <a>a 链接</a>
+        <b>b</b>
+        <strong>string</strong>
+        <sup>sup</sup>
+        <sub>sub</sub>
+        <i>i</i>
+
+        换行 br：
+        <br>
+        <em>em</em>
+        <del>del</del>
+    </div>
+</body>
+
+</html>
